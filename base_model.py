@@ -40,3 +40,6 @@ class AbstractStatementConsumer(abc.ABC):
     def write_header(self):
         """Stub for method writing a header line to a CSV file"""
         pass
+
+    def finish(self):
+        """Stub for method finishing writing to a CSV file"""

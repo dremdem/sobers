@@ -44,3 +44,7 @@ class CSVStatementConsumer(base_model.AbstractStatementConsumer):
     def write_line(self, line):
         """Line writer for a CSV-file"""
         self.writer.writerow(line)
+
+    def finish(self):
+        """Finish writing a file"""
+        del self.writer

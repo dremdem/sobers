@@ -29,3 +29,4 @@ class StatementPipeline:
         for producer in self.producers:
             for line in producer:
                 self.consumer.write_line(line)
+        self.consumer.finish()
